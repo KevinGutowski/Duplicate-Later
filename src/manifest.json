@@ -1,0 +1,33 @@
+{
+    "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+    "icon": "icon.png",
+    "commands": [
+    {
+        "name": "Duplicate Later",
+        "identifier": "com.kevingutowski.duplicateLayer.getInfo",
+        "script": "./my-command.js",
+        "handler": "getInfo"
+    },
+    {
+        "name": "Listen for Events",
+        "identifier": "com.kevingutowski.duplicateLayer.listen",
+        "script": "./my-command.js",
+        "handlers":
+        {
+            "actions":
+            {
+                "Duplicate.begin": "duplicateBegin",
+                "Duplicate.finish": "duplicateFinish",
+                "LayersMoved.finish": "layersMovedFinished"
+            }
+        }
+    } ],
+    "menu":
+    {
+        "title": "DuplicateLater",
+        "items": [
+            "com.kevingutowski.duplicateLayer.getInfo"
+        ],
+        "isRoot": true
+    }
+}
