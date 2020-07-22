@@ -1,5 +1,7 @@
 # DuplicateLater
 
+![Example of Plugin](./images/demo.gif)
+
 ## Installation
 
 - [Download](../../releases/latest/download/duplicatelater.sketchplugin.zip) the latest release of the plugin
