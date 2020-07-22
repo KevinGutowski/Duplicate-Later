@@ -1,7 +1,7 @@
 {
   "name": "duplicatelater",
   "description": "Duplicate layers in the same direction after duplicating (like in Figma).",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "sketch": ">=49.0"
   },
